@@ -1,0 +1,36 @@
+2、public class Test{
+public static void main(String[] args){
+    Scanner scanner =  new Scanner(System.in);
+  System.out.println("请输入一个整数 :");
+  int num = scanner.nextInt();
+  for(int i =2;i<Math.sqrt(num);i+=2){
+            if(num % i ==0){
+            System.out.println("该数不是素数！");
+             }
+             else{
+             System.out.println("该数为素数！");
+             }
+}
+}
+3、public class Test{
+public static void main(String[] args){
+     for(int num= 1;num<101;num++){
+       for(int i =2;i<Math.sqrt(num);i+=2){
+       if(num % i ==0){
+        break;
+        }else{
+        System.out.println(num);
+      }
+    }
+}
+}
+4、
+public class Test{
+  public static void main(String[] args){
+    for(int year =1000;year<=2000;year++){
+      if( (year % 400 ==0) ||((year % 4 ==0 ) && (year % 100 !=0))){
+           System.out.println("year =" + year);
+}
+}
+}
+}
